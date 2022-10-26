@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf Apps</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <span class="navbar-brand mb-0 h1">Bookshelf Apps</span>
+      <form class="d-flex" role="search" id="formSearch">
+        <input class="form-control me-2" type="search" name="search" id="searchBook" placeholder="Cari Buku" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Cari</button>
+      </form>
+    </div>
+  </nav>
+
+  <section class="my-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-12">
+          <div class="card p-3 rounded-4 shadow">
+            <div class="card-body">
+              <p class="fw-bold text-center fs-4">Masukkan Buku Baru</p>
+
+              <form class="" id="inputBook">
+                <div class="mb-3">
+                  <label for="bookTitle" class="form-label fw-semibold">Judul</label>
+                  <input type="text" class="form-control" id="bookTitle" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="bookAuthor" class="form-label fw-semibold">Penulis</label>
+                  <input type="text" class="form-control" id="bookAuthor" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="bookYear" class="form-label fw-semibold">Tahun</label>
+                  <input type="number" class="form-control" id="bookYear" aria-describedby="emailHelp">
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="bookIsComplete">
+                  <label class="form-check-label fw-semibold" for="bookIsComplete">
+                    Selesai dibaca
+                  </label>
+                </div>
+
+                <div class="my-2">
+                  <button type="submit" class="btn btn-dark w-100 fw-bold">Simpan</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="card p-3 rounded-4 shadow mt-3">
+            <div class="card-body">
+              <p class="fw-bold fs-5">Belum selesai dibaca</p>
+
+              <div id="unfinishedBook"></div>
+            </div>
+          </div>
+
+          <div class="card p-3 rounded-4 shadow mt-3">
+            <div class="card-body">
+              <p class="fw-bold fs-5">Selesai dibaca</p>
+
+              <div id="finishedBook"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="savedEvent" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Berhasil Disimpan!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="movedEvent" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Berhasil Dipindahkan!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="deleteEvent" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Berhasil Dihapus!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
+    <div id="nullForm" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Data Tidak Boleh Kosong!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="./assets/main.js"></script>
+</body>
+</html>
