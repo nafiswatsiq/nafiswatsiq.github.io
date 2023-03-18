@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form id="form" method="POST" action="">
+    <input name="Email" type="email" placeholder="Email" required>
+    <input name="Name" type="text" placeholder="Name" required>
+    <input name="Age" type="number" placeholder="Age" required>
+    <select name="Class" id="">
+      <option value="TI-1">TI-1</option>
+      <option value="TI-2">TI-2</option>
+      <option value="TI-3">TI-3</option>
+      <option value="TI-4">TI-4</option>
+    </select>
+    <button id="submit" type="submit">Send</button>
+  </form>
+
+  <script>
+    const form = document.querySelector("#form")
+    const submitButton = document.querySelector("#submit")
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz-Q-m0Eoysenv3u_GCcp__7eX-FrRChEb8J2LAsBxrHJptg-ysTUV8n8_Tgb_VJIqLYg/exec'
+
+    form.addEventListener('submit', e => {
+      submitButton.disabled = true
+      e.preventDefault()
+      let requestBody = new FormData(form)
+      fetch(scriptURL, {
+          method: 'POST',
+          body: requestBody
+        }).then(response => {
+          alert('Success!', response)
+          submitButton.disabled = false
+        }).catch(error => {
+          alert('Error!', error.message)
+          submitButton.disabled = false
+
+        })
+    })
+  </script>
+</body>
+
+</html>
