@@ -22,17 +22,17 @@ export default function Preload({ onComplete }: PreloadProps) {
       const letters = textRef.current.querySelectorAll('.letter');
       
       // Set initial state untuk huruf-huruf (hidden)
-      gsap.set(letters, {
-        y: 100,
-        opacity: 0,
-        rotation: 45,
-        scale: 0.5
-      });
+      // gsap.set(letters, {
+      //   y: 100,
+      //   opacity: 0,
+      //   rotation: 45,
+      //   scale: 0.5
+      // });
 
       // Pertama: Animasi loading percentage saja
       tl.to(counter, {
         value: 100,
-        duration: 0.5,
+        duration: 0.8,
         ease: "power2.inOut",
         onUpdate: () => {
           setPercentage(Math.round(counter.value));
@@ -46,7 +46,7 @@ export default function Preload({ onComplete }: PreloadProps) {
         scale: 1,
         duration: 0.4,
         ease: "back.out(1.7)",
-        stagger: 0.08
+        stagger: 0
       }, "+=0.3")
       // Floating effect untuk huruf-huruf
       .to(letters, {
@@ -97,7 +97,7 @@ export default function Preload({ onComplete }: PreloadProps) {
         <div 
           ref={textRef}
           className="text-black font-bold select-none flex"
-          style={{ fontSize: '8rem', lineHeight: '1', gap: '0.1em' }}
+          style={{ fontSize: '9rem', lineHeight: '1', gap: '0.1em' }}
         >
           {"NAFIS WATSIQ".split('').map((char, index) => (
             <span 
@@ -118,7 +118,7 @@ export default function Preload({ onComplete }: PreloadProps) {
       <div className="absolute bottom-8 right-8">
         <span 
           className="text-black font-bold"
-          style={{ fontSize: '3rem' }}
+          style={{ fontSize: '5rem' }}
         >
           {percentage}%
         </span>

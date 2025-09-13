@@ -188,3 +188,10 @@ body {
   perspective: 400px;
   cursor: pointer;
 }
+
+.inversion-lens {
+  position: relative;
+  /* width: 100vw;
+  height: 100vh; */
+  overflow: hidden;
+}

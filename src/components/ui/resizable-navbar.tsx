@@ -10,6 +10,7 @@ import {
 
 import React, { useRef, useState } from "react";
 import WipeLink from "../WipeLink";
+import SmoothLink from "../SmoothLink";
 
 
 interface NavbarProps {
@@ -139,21 +140,24 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
       )}
     >
       {items.map((item, idx) => (
-        <a
+        <div
           onMouseEnter={() => setHovered(idx)}
-          onClick={onItemClick}
-          className="relative px-4 py-2 text-neutral-50 dark:text-neutral-300 "
           key={`link-${idx}`}
-          href={item.link}
+          className="relative"
         >
-          {hovered === idx && (
-            <motion.div
-              layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800"
-            />
-          )}
-          <span className={cn("relative z-20", hovered === idx && "text-neutral-900 dark:text-neutral-100")}>{item.name}</span>
-        </a>
+          <SmoothLink
+            className="relative px-4 py-2 text-neutral-50 dark:text-neutral-300 "
+            href={item.link}
+          >
+            {hovered === idx && (
+              <motion.div
+                layoutId="hovered"
+                className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800"
+              />
+            )}
+            <span className={cn("relative z-20", hovered === idx && "text-neutral-900 dark:text-neutral-100")}>{item.name}</span>
+          </SmoothLink>
+        </div>
       ))}
     </motion.div>
   );

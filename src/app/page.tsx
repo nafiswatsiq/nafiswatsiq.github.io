@@ -1,5 +1,5 @@
 'use client';
-import Image from "next/image";
+
 import { useRef, useEffect, useState } from 'react'
 import { gsap } from 'gsap'
 import Preload from '@/components/Preload'
@@ -7,6 +7,7 @@ import { BackgroundGradientAnimation } from '@/components/ui/background-gradient
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import About from "@/components/About";
+import Tech from '@/components/Tech';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -47,7 +48,7 @@ export default function Home() {
           <Nav />
           <Hero />
           <About />
-          <Hero />
+          <Tech />
           <Hero />
         </main>
       </BackgroundGradientAnimation>

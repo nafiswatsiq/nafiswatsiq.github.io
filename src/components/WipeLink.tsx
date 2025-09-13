@@ -27,7 +27,7 @@ const WipeLink: React.FC<WipeLinkProps> = ({ href, text1, text2, className }) =>
     const onEnter = () => {
       gsap.to(texts, {
         yPercent: -100,
-        duration: 0.2,
+        duration: 0.3,
         ease: 'power2.out',
         stagger: 0.02,
       });
@@ -36,7 +36,7 @@ const WipeLink: React.FC<WipeLinkProps> = ({ href, text1, text2, className }) =>
     const onLeave = () => {
       gsap.to(texts, {
         yPercent: 0,
-        duration: 0.2,
+        duration: 0.3,
         ease: 'power2.out',
         stagger: 0.02,
       });

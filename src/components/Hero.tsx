@@ -1,10 +1,12 @@
-import gsap from "gsap";
-import { useRef, useEffect } from "react";
-import SwingText from "./SwingText";
+'use client';
+
+// import gsap from "gsap";
+// import { useRef, useEffect } from "react";
+// import SwingText from "./SwingText";
 import WobbleText from "./WobbleText";
 import MagneticButton from "./MagneticButton";
-import FlipText from "./FlipText";
-import WipeLink from "./WipeLink";
+// import FlipText from "./FlipText";
+// import WipeLink from "./WipeLink";
 import FlipTextAnimation from "./FlipTextAnimation";
 import SmoothLink from "./SmoothLink";
 
@@ -15,7 +17,7 @@ export default function Hero() {
         <p className="text-6xl md:text-8xl text-start font-bold">
           <FlipTextAnimation 
             text="FULLSTACK"
-            delay={4}
+            delay={3.5}
             direction="right"
             enableHover={true}
           />
@@ -23,7 +25,7 @@ export default function Hero() {
         <p className="text-6xl md:text-8xl text-end font-bold">
           <FlipTextAnimation 
             text="WEB DEVELOPER"
-            delay={4.2}
+            delay={3.8}
             direction="left"
             enableHover={true}
           />
@@ -32,7 +34,7 @@ export default function Hero() {
           <span className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm">
             <FlipTextAnimation 
               text="FRONTEND DEVELOPER"
-              delay={4.5}
+              delay={4}
               duration={0.6}
               stagger={0.05}
               direction="right"
@@ -42,7 +44,7 @@ export default function Hero() {
           <span className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm">
             <FlipTextAnimation 
               text="BACKEND DEVELOPER"
-              delay={4.8}
+              delay={4}
               duration={0.6}
               stagger={0.05}
               direction="left"
@@ -52,7 +54,7 @@ export default function Hero() {
           <span className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm">
             <FlipTextAnimation 
               text="DEVOPS"
-              delay={4.8}
+              delay={4.3}
               duration={0.6}
               stagger={0.05}
               direction="right"
