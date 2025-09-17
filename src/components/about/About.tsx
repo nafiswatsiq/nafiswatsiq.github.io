@@ -14,19 +14,19 @@ export default function About() {
         <div>
           <div className="flex flex-wrap justify-end items-center gap-1.5 mb-12 z-10">
             <WipeLink 
-              href="#contact" 
+              href="https://www.linkedin.com/in/nafis-watsiq-705489220/" 
               text1="LINKEDIN" 
               text2="LINKEDIN" 
             />
             <span>/</span>
             <WipeLink 
-              href="#contact" 
+              href="https://www.instagram.com/nafiswatsiq/" 
               text1="INSTAGRAM" 
               text2="INSTAGRAM" 
             />
             <span>/</span>
             <WipeLink 
-              href="#contact" 
+              href="https://github.com/nafiswatsiq" 
               text1="GITHUB" 
               text2="GITHUB" 
             />
