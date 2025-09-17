@@ -6,12 +6,12 @@ export default function StructuredData() {
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://nafiswatsiq.com/#person",
+        "@id": "https://nafiswatsiq.github.io/#person",
         "name": "Nafis Watsiq",
         "jobTitle": "Fullstack Web Developer",
         "description": "Fullstack Web Developer berpengalaman dalam pembuatan website modern dan responsif di Cilacap",
-        "url": "https://nafiswatsiq.com",
-        "image": "https://nafiswatsiq.com/profile-image.jpg",
+        "url": "https://nafiswatsiq.github.io",
+        "image": "https://nafiswatsiq.github.io/profile-image.jpg",
         "sameAs": [
           "https://github.com/nafiswatsiq",
           "https://linkedin.com/in/nafiswatsiq",
@@ -41,41 +41,41 @@ export default function StructuredData() {
       },
       {
         "@type": "Website",
-        "@id": "https://nafiswatsiq.com/#website",
-        "url": "https://nafiswatsiq.com",
+        "@id": "https://nafiswatsiq.github.io/#website",
+        "url": "https://nafiswatsiq.github.io",
         "name": "Nafis Watsiq - Fullstack Web Developer",
         "description": "Portfolio dan jasa pembuatan website profesional di Cilacap",
         "publisher": {
-          "@id": "https://nafiswatsiq.com/#person"
+          "@id": "https://nafiswatsiq.github.io/#person"
         },
         "inLanguage": "id-ID"
       },
       {
         "@type": "WebPage",
-        "@id": "https://nafiswatsiq.com/#webpage",
-        "url": "https://nafiswatsiq.com",
+        "@id": "https://nafiswatsiq.github.io/#webpage",
+        "url": "https://nafiswatsiq.github.io",
         "name": "NAFIS WATSIQ - Fullstack Web Developer | Pembuatan Website Cilacap",
         "isPartOf": {
-          "@id": "https://nafiswatsiq.com/#website"
+          "@id": "https://nafiswatsiq.github.io/#website"
         },
         "about": {
-          "@id": "https://nafiswatsiq.com/#person"
+          "@id": "https://nafiswatsiq.github.io/#person"
         },
         "description": "Jasa pembuatan website profesional di Cilacap. Fullstack Web Developer berpengalaman dalam React, Next.js, Node.js. Website responsif, modern, dan SEO-friendly untuk bisnis Anda.",
         "breadcrumb": {
-          "@id": "https://nafiswatsiq.com/#breadcrumb"
+          "@id": "https://nafiswatsiq.github.io/#breadcrumb"
         },
         "inLanguage": "id-ID"
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://nafiswatsiq.com/#breadcrumb",
+        "@id": "https://nafiswatsiq.github.io/#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://nafiswatsiq.com"
+            "item": "https://nafiswatsiq.github.io"
           }
         ]
       },
@@ -84,7 +84,7 @@ export default function StructuredData() {
         "name": "Jasa Pembuatan Website Cilacap",
         "description": "Layanan pembuatan website profesional untuk bisnis di Cilacap dan sekitarnya",
         "provider": {
-          "@id": "https://nafiswatsiq.com/#person"
+          "@id": "https://nafiswatsiq.github.io/#person"
         },
         "areaServed": {
           "@type": "Place",

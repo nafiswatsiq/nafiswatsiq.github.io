@@ -77,7 +77,7 @@ export default function Cerificates() {
           Some of My Certificates
         </p>
         <p className='text-xl text-gray-500 mt-4'>
-          Here are a few certificates I've earned recently.
+          Here are a few certificates I&apos;ve earned recently.
         </p>
       </div>
       <div className="py-16">

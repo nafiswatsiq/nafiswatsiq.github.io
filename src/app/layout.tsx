@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     "web design cilacap",
     "aplikasi web cilacap"
   ],
-  authors: [{ name: "Nafis Watsiq", url: "https://nafiswatsiq.com" }],
+  authors: [{ name: "Nafis Watsiq", url: "https://nafiswatsiq.github.io" }],
   creator: "Nafis Watsiq",
   publisher: "Nafis Watsiq",
   formatDetection: {
@@ -44,14 +44,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://nafiswatsiq.com'),
+  metadataBase: new URL('https://nafiswatsiq.github.io'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "NAFIS WATSIQ - Fullstack Web Developer | Pembuatan Website Cilacap",
     description: "Jasa pembuatan website profesional di Cilacap. Fullstack Web Developer berpengalaman dalam React, Next.js, Node.js. Website responsif, modern, dan SEO-friendly untuk bisnis Anda.",
-    url: 'https://nafiswatsiq.com',
+    url: 'https://nafiswatsiq.github.io',
     siteName: 'Nafis Watsiq Portfolio',
     images: [
       {
@@ -87,6 +87,7 @@ export const metadata: Metadata = {
     yandex: 'your-yandex-verification-code',
     yahoo: 'your-yahoo-verification-code',
   },
+  // manifest: '/manifest.webmanifest'
 };
 
 export default function RootLayout({

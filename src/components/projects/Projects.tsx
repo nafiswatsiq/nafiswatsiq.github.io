@@ -18,7 +18,7 @@ export default function Projects() {
           Some of My Projects
         </p>
         <p className='text-xl text-gray-500 mt-4'>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I&apos;ve worked on recently.
         </p>
       </div>
       <div className="">

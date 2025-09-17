@@ -19,7 +19,7 @@ export default function Connect() {
           <div className="relative flex flex-1 flex-col items-center justify-center text-center">
             <div className="w-full h-[58vh] flex flex-col items-center justify-center gap-8">
               <p className="text-gray-300 text-2xl">Need help with your project?</p>
-              <p className="font-bold text-7xl">LET'S CONNECT</p>
+              <p className="font-bold text-7xl">LET&apos;S CONNECT</p>
               <div className="mt-6">
                 <MagneticButton>
                   <a href="mailto:amrullohnafis@gmail.com">
