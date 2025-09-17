@@ -4,10 +4,13 @@ import { useRef, useEffect, useState } from 'react'
 import { gsap } from 'gsap'
 import Preload from '@/components/Preload'
 import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
-import Hero from "@/components/Hero";
+import Hero from "@/components/hero/Hero";
 import Nav from "@/components/Nav";
-import About from "@/components/About";
-import Tech from '@/components/Tech';
+import About from "@/components/about/About";
+import Tech from '@/components/tech/Tech';
+import Projects from '@/components/projects/Projects';
+import Cerificates from '@/components/certificates/Cerificates';
+import Connect from '@/components/connect/Connect';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -49,7 +52,9 @@ export default function Home() {
           <Hero />
           <About />
           <Tech />
-          <Hero />
+          <Projects />
+          <Cerificates />
+          <Connect />
         </main>
       </BackgroundGradientAnimation>
     </>

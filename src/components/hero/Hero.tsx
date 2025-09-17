@@ -3,16 +3,16 @@
 // import gsap from "gsap";
 // import { useRef, useEffect } from "react";
 // import SwingText from "./SwingText";
-import WobbleText from "./WobbleText";
-import MagneticButton from "./MagneticButton";
+import WobbleText from "../WobbleText";
+import MagneticButton from "../MagneticButton";
 // import FlipText from "./FlipText";
 // import WipeLink from "./WipeLink";
-import FlipTextAnimation from "./FlipTextAnimation";
-import SmoothLink from "./SmoothLink";
+import FlipTextAnimation from "../FlipTextAnimation";
+import SmoothLink from "../SmoothLink";
 
 export default function Hero() {
   return (
-    <section className="flex min-h-[92vh] flex-col items-center justify-center px-20 relative">
+    <section id="home" className="flex min-h-[92vh] flex-col items-center justify-center px-20 relative">
       <div className="mb-12">
         <p className="text-6xl md:text-8xl text-start font-bold">
           <FlipTextAnimation 
@@ -72,7 +72,7 @@ export default function Hero() {
         </MagneticButton>
       </SmoothLink>
       <div className="absolute top-[30%] right-20">
-        <WobbleText>SCROLL - 01 // 04</WobbleText>
+        <WobbleText>SCROLL - 01 // 05</WobbleText>
       </div>
       {/* <div className="py-20">
         <div className="flex flex-wrap justify-center items-center gap-1.5 mb-12 z-10">

@@ -265,8 +265,8 @@ export const MobileNavToggle = ({
 
 export const NavbarLogo = ({ className, visible }: NavLogoProps) => {
   return (
-    <a
-      href="#"
+    <SmoothLink
+      href="#home"
       className={cn(
         "relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 font-normal text-white transition-all duration-300",
         visible ? "text-sm" : "text-5xl",
@@ -280,29 +280,26 @@ export const NavbarLogo = ({ className, visible }: NavLogoProps) => {
         height={30}
       /> */}
       <span className="font-medium text-white dark:text-white">NAFIS W.</span>
-    </a>
+    </SmoothLink>
   );
 };
 
 export const NavbarButton = ({
-  href,
-  as: Tag = "a",
+  // href,
+  // as: Tag = "a",
   children,
   className,
   variant = "primary",
   visible,
   ...props
 }: {
-  href?: string;
-  as?: React.ElementType;
+  // href?: string;
+  // as?: React.ElementType;
   children: React.ReactNode;
   className?: string;
   variant?: "primary" | "secondary" | "dark" | "gradient";
   visible?: boolean;
-} & (
-  | React.ComponentPropsWithoutRef<"a">
-  | React.ComponentPropsWithoutRef<"button">
-)) => {
+} & React.ComponentPropsWithoutRef<"button">) => {
   const baseStyles =
     "px-4 py-2 rounded-md bg-white button bg-white text-black text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
 
@@ -316,12 +313,14 @@ export const NavbarButton = ({
   };
 
   return (
-    <Tag
-      href={href || undefined}
-      className={cn(baseStyles, variantStyles[variant], className)}
-      {...props}
-    >
-      {children}
-    </Tag>
+    <SmoothLink href="#connect">
+      <button
+        // href={href || undefined}
+        className={cn(baseStyles, variantStyles[variant], className)}
+        {...props}
+      >
+        {children}
+      </button>
+    </SmoothLink>
   );
 };

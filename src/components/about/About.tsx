@@ -1,18 +1,18 @@
 'use client'
 import InversionLens from './InversionLens/InversionLens';
-import MagneticButton from './MagneticButton';
-import SmoothLink from './SmoothLink';
-import TextScrollParalax from './TextScrollParalax';
-import WipeLink from './WipeLink';
+import MagneticButton from '../MagneticButton';
+import SmoothLink from '../SmoothLink';
+import TextScrollParalax from '../TextScrollParalax';
+import WipeLink from '../WipeLink';
 
 export default function About() {
   return (
     <section id='about' className=" relative px-20 py-36">
-      <div className='flex justify-between w-full'>
+      <div className='grid grid-cols-4 w-full'>
         <span>02/</span>
         <span>ABOUT</span>
         <div>
-          <div className="flex flex-wrap justify-center items-center gap-1.5 mb-12 z-10">
+          <div className="flex flex-wrap justify-end items-center gap-1.5 mb-12 z-10">
             <WipeLink 
               href="#contact" 
               text1="LINKEDIN" 
@@ -32,7 +32,7 @@ export default function About() {
             />
           </div>
         </div>
-        <span>/04</span>
+        <span className='text-right'>/05</span>
       </div>
 
       <div className='grid grid-cols-4 gap-12 mt-6'>

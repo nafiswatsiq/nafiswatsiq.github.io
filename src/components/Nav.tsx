@@ -15,13 +15,22 @@ import { useState } from "react";
 export default function Nav() {
   const navItems = [
     {
+      name: "ABOUT",
+      link: "#about",
+    },
+    {
+      name: "TECH",
+      link: "#tech",
+    },
+    {
       name: "PROJECTS",
       link: "#projects",
     },
     {
-      name: "ABOUT",
-      link: "#about",
+      name: "CERTIFICATES",
+      link: "#certificates",
     },
+    
     // {
     //   name: "CONTACT",
     //   link: "#contact",
@@ -39,6 +48,7 @@ export default function Nav() {
           {/* <div className="flex items-center gap-4">
             <NavbarButton variant="secondary">Login</NavbarButton>
             </div> */}
+          
           <NavbarButton variant="primary" className="rounded-full">CONTACT ME</NavbarButton>
         </NavBody>
  
