@@ -85,7 +85,7 @@ export default function Cerificates() {
       </div>
       <div>
         <a 
-          href="#certificates"
+          href="/certificates"
           rel="noopener noreferrer"
           className="text-2xl flex items-center justify-start gap-2 font-medium hover:translate-x-3 transition-transform duration-300 w-fit"
         >

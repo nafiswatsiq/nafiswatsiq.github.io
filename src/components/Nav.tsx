@@ -15,6 +15,10 @@ import { useState } from "react";
 export default function Nav() {
   const navItems = [
     {
+      name: "HOME",
+      link: "/",
+    },
+    {
       name: "ABOUT",
       link: "#about",
     },
@@ -30,7 +34,6 @@ export default function Nav() {
       name: "CERTIFICATES",
       link: "#certificates",
     },
-    
     // {
     //   name: "CONTACT",
     //   link: "#contact",

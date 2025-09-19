@@ -17,17 +17,21 @@ interface SmoothLinkProps {
 
 const SmoothLink: React.FC<SmoothLinkProps> = ({ href, children, className }) => {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault(); // Mencegah link "melompat" secara default
-
-    // Panggil fungsi scrollTo dari Lenis
-    if (window.lenis) {
-      window.lenis.scrollTo(href, {
-        duration: 3, // Atur durasi scroll (dalam detik)
-        easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Contoh easing
-      });
+    // Jika href adalah hash, lakukan smooth scroll
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      if (window.lenis) {
+        window.lenis.scrollTo(href, {
+          duration: 3,
+          easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        });
+      } else {
+        document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+      }
     } else {
-      // Fallback jika Lenis tidak ditemukan
-      document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+      // Untuk href '/' atau path lain, lakukan navigasi normal
+      // Tidak perlu preventDefault
+      // window.location.href = href; // Atau biarkan default
     }
   };
 
