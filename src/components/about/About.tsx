@@ -50,13 +50,11 @@ export default function About() {
             <TextScrollParalax />
           </div>
         </div>
-        <SmoothLink href="#tech" className='col-span-1 flex flex-col gap-2 items-center justify-center'>
+        <a href="cv/Nafis-Watsiq-resume.pdf" download className='col-span-1 flex items-center justify-center'>
           <MagneticButton>
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4V20M12 20L18 14M12 20L6 14" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+            DOWNLOAD<br/>CV
           </MagneticButton>
-        </SmoothLink>
+        </a>
       </div>
     </section>
   );

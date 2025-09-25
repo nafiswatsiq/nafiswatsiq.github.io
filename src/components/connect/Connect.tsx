@@ -27,6 +27,17 @@ export default function Connect() {
                   </a>
                 </MagneticButton>
               </div>
+              <div className="flex gap-6 mt-8">
+                <a href="https://github.com/nafiswatsiq" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                  GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/nafis-watsiq-705489220/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                  LinkedIn
+                </a>
+                <a href="mailto:amrullohnafis@gmail.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                  amrullohnafis@gmail.com
+                </a>
+              </div>
             </div>
           </div>
         </div>
