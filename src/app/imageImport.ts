@@ -1,6 +1,6 @@
 const github = "/images/tech/github.png";
 const git = "/images/tech/git.png";
-const html = "/images/tech/html.png";
+const html = "/images/tech/html-img.png";
 const css = "/images/tech/css.png";
 const javascript = "/images/tech/javascript.png";
 const alpinejs = "/images/tech/alpinejs.png";
