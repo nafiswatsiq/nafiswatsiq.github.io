@@ -4,9 +4,9 @@
   "description": "Jasa pembuatan website profesional di Cilacap. Fullstack Web Developer berpengalaman dalam React, Next.js, Node.js.",
   "icons": [
     {
-      "src": "/favicon-192x192.png",
+      "src": "/favicon.jpg",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/jpg"
     }
   ],
   "theme_color": "#ffffff",

@@ -30,6 +30,13 @@ export const projects = [
     thumbnail: "/images/projects/porto-3.png"
   },
   {
+    title: "SPARK",
+    description: 
+      "Event management solution facilitating digital exhibition ticket sales. The system also includes a fully integrated online store module for managing and selling event merchandise.",
+    link: "https://sparkstage55.com/",
+    thumbnail: "/images/projects/porto-9.png"
+  },
+  {
     title: "BSI OTO",
     description:
       "BSI OTO website, a platform for buying and selling new and used vehicles.",
@@ -61,12 +68,5 @@ export const projects = [
     description: "My personal portfolio website showcasing my projects and skills.",
     link: "#home",
     thumbnail: "/images/projects/porto-8.png"
-  },
-  {
-    title: "SPARK",
-    description: 
-      "Event management solution facilitating digital exhibition ticket sales. The system also includes a fully integrated online store module for managing and selling event merchandise.",
-    link: "https://sparkstage55.com/",
-    thumbnail: "/images/projects/porto-9.png"
   },
 ];
