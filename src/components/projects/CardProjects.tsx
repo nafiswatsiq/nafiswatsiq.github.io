@@ -63,10 +63,10 @@ export const projects = [
     thumbnail: "/images/projects/porto-8.png"
   },
   {
-    title: "WEDDING INVITATION",
+    title: "SPARK",
     description: 
-      "Digital wedding invitation website with RSVP feature and event details.",
-    link: "https://wedding-invitation-digital.vercel.app/?to=nafiswatsiq",
+      "Event management solution facilitating digital exhibition ticket sales. The system also includes a fully integrated online store module for managing and selling event merchandise.",
+    link: "https://sparkstage55.com/",
     thumbnail: "/images/projects/porto-9.png"
   },
 ];
