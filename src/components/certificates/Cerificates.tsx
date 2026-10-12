@@ -63,11 +63,11 @@ export default function Cerificates() {
   ];
 
   return (
-    <section id='certificates' className=" relative px-20 pt-36 pb-20">
-      <div className='grid grid-cols-4 w-full'>
+    <section id='certificates' className="relative section-x pt-20 md:pt-36 pb-20">
+      <div className='grid grid-cols-3 lg:grid-cols-4 w-full'>
         <span>05/</span>
         <span>CERTIFICATES</span>
-        <div>
+        <div className="hidden lg:block">
         </div>
         <span className='text-right'>/05</span>
       </div>
@@ -76,21 +76,21 @@ export default function Cerificates() {
         <p className='text-3xl md:text-5xl font-bold mt-6'>
           Some of My Certificates
         </p>
-        <p className='text-xl text-gray-500 mt-4'>
+        <p className='text-lg md:text-xl text-gray-500 mt-4'>
           Here are a few certificates I&apos;ve earned recently.
         </p>
       </div>
-      <div className="py-16">
+      <div className="py-10 md:py-16">
         <FocusCards cards={cards} />
       </div>
       <div>
         <a 
           href="/certificates"
           rel="noopener noreferrer"
-          className="text-2xl flex items-center justify-start gap-2 font-medium hover:translate-x-3 transition-transform duration-300 w-fit"
+          className="text-lg md:text-2xl flex items-center justify-start gap-2 font-medium hover:translate-x-3 transition-transform duration-300 w-fit"
         >
           <span className="mr-2">View All Certificates</span>
-          <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 md:w-24 md:h-24">
             <path d="M10 50 L85 50 L75 40" stroke="white" strokeWidth="2" fill="none" />
           </svg>
         </a>

@@ -12,9 +12,9 @@ import SmoothLink from "../SmoothLink";
 
 export default function Hero() {
   return (
-    <section id="home" className="flex min-h-[92vh] flex-col items-center justify-center px-20 relative">
-      <div className="mb-12">
-        <p className="text-6xl md:text-8xl text-start font-bold">
+    <section id="home" className="flex min-h-[92vh] flex-col items-center justify-center section-x relative">
+      <div className="mb-12 md:max-w-4xl w-full">
+        <p className="text-4xl sm:text-6xl md:text-8xl text-start font-bold">
           <FlipTextAnimation 
             text="FULLSTACK"
             delay={3.5}
@@ -22,16 +22,26 @@ export default function Hero() {
             enableHover={true}
           />
         </p>
-        <p className="text-6xl md:text-8xl text-end font-bold">
+        <p className="text-4xl sm:text-6xl md:text-8xl text-end font-bold">
           <FlipTextAnimation 
-            text="WEB DEVELOPER"
+            text="DEVELOPER"
             delay={3.8}
             direction="left"
             enableHover={true}
           />
         </p>
-        <div className="mt-8 flex flex-wrap gap-4 justify-center">
-          <span className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm">
+        <div className="mt-8 flex flex-wrap gap-2 sm:gap-4 justify-center">
+          <span className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-xs sm:text-sm">
+            <FlipTextAnimation 
+              text="SOFTWARE ENGINEER"
+              delay={4}
+              duration={0.6}
+              stagger={0.05}
+              direction="right"
+              enableHover={false}
+            />
+          </span>
+          <span className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-xs sm:text-sm">
             <FlipTextAnimation 
               text="FRONTEND DEVELOPER"
               delay={4}
@@ -41,7 +51,7 @@ export default function Hero() {
               enableHover={false}
             />
           </span>
-          <span className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm">
+          <span className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-xs sm:text-sm">
             <FlipTextAnimation 
               text="BACKEND DEVELOPER"
               delay={4}
@@ -51,7 +61,7 @@ export default function Hero() {
               enableHover={false}
             />
           </span>
-          <span className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm">
+          <span className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-xs sm:text-sm">
             <FlipTextAnimation 
               text="DEVOPS"
               delay={4.3}
@@ -71,7 +81,7 @@ export default function Hero() {
           </svg>
         </MagneticButton>
       </SmoothLink>
-      <div className="absolute top-[30%] right-20">
+      <div className="absolute top-[30%] right-5 sm:right-20">
         <WobbleText>SCROLL - 01 // 05</WobbleText>
       </div>
       {/* <div className="py-20">

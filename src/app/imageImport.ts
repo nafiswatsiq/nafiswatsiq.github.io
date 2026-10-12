@@ -20,6 +20,7 @@ const firebase = "/images/tech/firebase.png";
 const supabase = "/images/tech/supabase.png";
 const prisma = "/images/tech/prisma.png";
 const figma = "/images/tech/figma.png";
+const angular = "/images/tech/angularjs.png";
 
 // const mongodb = "/images/tech/mongodb.png";
 // const threejs = "/images/tech/threejs.png";
@@ -53,4 +54,5 @@ export {
   supabase,
   prisma,
   figma,
+  angular,
 };

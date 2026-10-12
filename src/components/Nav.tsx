@@ -74,7 +74,7 @@ export default function Nav() {
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-50 dark:text-neutral-300"
+                className="relative text-neutral-800 dark:text-neutral-300 text-lg font-medium"
               >
                 <span className="block">{item.name}</span>
               </a>
@@ -83,16 +83,9 @@ export default function Nav() {
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
-                className="w-full"
+                className="w-full !text-black"
               >
-                Login
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
+                CONTACT ME
               </NavbarButton>
             </div>
           </MobileNavMenu>

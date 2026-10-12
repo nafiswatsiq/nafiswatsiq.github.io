@@ -96,8 +96,8 @@ export default function Preload({ onComplete }: PreloadProps) {
       <div className="absolute inset-0 flex items-center justify-center">
         <div 
           ref={textRef}
-          className="text-black font-bold select-none flex"
-          style={{ fontSize: '9rem', lineHeight: '1', gap: '0.1em' }}
+          className="text-black font-bold select-none flex text-4xl sm:text-6xl md:text-8xl lg:text-[9rem]"
+          style={{ lineHeight: '1', gap: '0.1em' }}
         >
           {"NAFIS WATSIQ".split('').map((char, index) => (
             <span 
@@ -117,8 +117,7 @@ export default function Preload({ onComplete }: PreloadProps) {
       {/* Persentase di pojok kanan bawah */}
       <div className="absolute bottom-8 right-8">
         <span 
-          className="text-black font-bold"
-          style={{ fontSize: '5rem' }}
+          className="text-black font-bold text-3xl sm:text-5xl md:text-7xl"
         >
           {percentage}%
         </span>

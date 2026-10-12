@@ -95,22 +95,49 @@ export default function AllCertificate() {
   ];
 
   return (
-    <DraggableCardContainer className="relative flex min-h-[330vh] w-full items-center justify-center overflow-clip">
-      <p className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
-        If its your first day at Fight Club, you have to fight.
-      </p>
-      {items.map((item) => (
-        <DraggableCardBody key={item.title} className={item.className}>
-          <img
-            src={item.image}
-            alt={item.title}
-            className="pointer-events-none relative z-10 h-80 w-full object-cover"
-          />
-          <h3 className="mt-4 text-center text-xl font-bold text-neutral-700 dark:text-neutral-300">
-            {item.title}
-          </h3>
-        </DraggableCardBody>
-      ))}
-    </DraggableCardContainer>
+    <>
+      {/* Mobile: simple stacked grid */}
+      <div className="section-x flex min-h-screen w-full flex-col items-center gap-6 py-10 lg:hidden">
+        <p className="mx-auto max-w-sm text-center text-2xl font-black text-neutral-400 dark:text-neutral-800">
+          If its your first day at Fight Club, you have to fight.
+        </p>
+        <div className="grid w-full grid-cols-1 sm:grid-cols-2 gap-6">
+          {items.map((item) => (
+            <div
+              key={item.title}
+              className="w-full overflow-hidden rounded-md bg-neutral-100 p-4 shadow-2xl dark:bg-neutral-900"
+            >
+              <img
+                src={item.image}
+                alt={item.title}
+                className="pointer-events-none relative z-10 h-56 w-full rounded object-cover"
+              />
+              <h3 className="mt-4 text-center text-base font-bold text-neutral-700 dark:text-neutral-300">
+                {item.title}
+              </h3>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Desktop: draggable cards */}
+      <DraggableCardContainer className="relative hidden min-h-[330vh] w-full items-center justify-center overflow-clip lg:flex">
+        <p className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
+          If its your first day at Fight Club, you have to fight.
+        </p>
+        {items.map((item) => (
+          <DraggableCardBody key={item.title} className={item.className}>
+            <img
+              src={item.image}
+              alt={item.title}
+              className="pointer-events-none relative z-10 h-80 w-full object-cover"
+            />
+            <h3 className="mt-4 text-center text-xl font-bold text-neutral-700 dark:text-neutral-300">
+              {item.title}
+            </h3>
+          </DraggableCardBody>
+        ))}
+      </DraggableCardContainer>
+    </>
   )
 }
